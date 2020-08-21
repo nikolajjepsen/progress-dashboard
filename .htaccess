@@ -1,0 +1,43 @@
+Options +Indexes
+
+RewriteEngine On 
+
+# Auth pages
+RewriteRule ^login/?$ login.php
+RewriteRule ^logout/?$ logout.php
+
+
+# Contacts
+
+# Import
+#RewriteRule ^contacts/import/?$ contacts/import/import.php
+RewriteRule ^contacts/import/([\d]+)/?$ contacts/import/import.php?fileId=$1 [QSA]
+RewriteRule ^contacts/files/?$ contacts/import/files.php
+
+# Export
+RewriteRule ^contacts/export/?$ contacts/export/export.php
+RewriteRule ^contacts/download/?$ contacts/export/download_zip.php
+
+# Search
+RewriteRule ^contacts/search/?$ contacts/search.php
+
+
+# Content
+
+#Partials
+RewriteRule ^content/partials/?$ content/partials/partials.php
+RewriteRule ^content/partials/single/([0-9]+)/?$ content/partials/single.php?partialId=$1 [QSA]
+
+# Projects
+RewriteRule ^content/projects/?$ content/projects/projects.php
+RewriteRule ^content/projects/loan/?$ content/projects/loan/overview.php
+RewriteRule ^content/projects/loan/single/([0-9]+)/?$ content/projects/loan/single.php?siteId=$1 [QSA]
+
+# Tracking
+
+# Domains
+RewriteRule ^domains/overview/?$ domains/overview.php
+RewriteRule ^domains/delete/([0-9]+)/?$ domains/overview.php?deleteDomain=1&domainId=$1 [QSA]
+RewriteRule ^domains/single/([0-9]+)/?$ domains/single.php?domainId=$1 [QSA]
+RewriteRule ^domains/settings/?$ domains/settings.php
+

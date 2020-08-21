@@ -1,0 +1,354 @@
+body {
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 15px;
+	background-color: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 700;
+}
+
+.fi {
+  display: inline-flex;
+  align-self: center;
+}
+.fi svg {
+  height:16px;
+  width:16px;
+}
+.fi.fi-baseline svg {
+  top: .125em;
+  position: relative;
+}
+
+.profile-container {
+	border-bottom: 1px #f4f4f4 solid;
+}
+.profile {
+	background: #fafafa;
+	display: inline-block;
+}
+.profile.active {
+	border: 3px #2d48c5 solid;
+}
+.profile img {
+	border: 8px #fafafa solid;
+	width: 125px;
+	height: 125px;
+}
+.sidebar {
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 25px 0 0;
+    background-color: #fff;
+    border-right: 1px #f4f4f4 solid;
+    color: #030a2b;
+}
+.sidebar .brand-name {
+	font-weight: 400;
+	font-size: 24px;
+}
+.sidebar .user {
+	font-family: 'proxima_nova_scosfthin', 'Proxima Nova', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+}
+.sidebar .nav-heading
+.navbar .nav-heading {
+	margin-left: 20px;
+}
+.sidebar .nav-heading .icon {
+	padding-left: 20px;
+}
+.sidebar .nav-heading .title,
+.navbar .nav-heading .title {
+	margin: 6px 0;
+	font-family: 'proxima_nova_scosfthin', 'Proxima Nova', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 85%;
+	padding-left: 6px;
+}
+.sidebar .nav-item {
+	padding: 7px 0;
+}
+.sidebar .nav-item .nav-link {
+	padding: 0 0 0 55px;
+	margin: 4px 0;
+}
+
+.sidebar .nav-item.active {
+	position: relative;
+	background-color: #f4f5fd;
+}
+.sidebar .nav-item.active:after {
+	content: ' ';
+	background-color: #2d48c5;
+	position: absolute;
+	top: 0;
+	right: -2px;
+	width: 4px;
+	height: 100%;
+	border-radius: 8px;
+}
+
+.navbar-light .navbar-brand {
+	color: #030a2b;
+}
+.navbar .navbar-brand {
+	font-weight: 600;
+}
+.navbar .navbar-brand span {
+	font-weight: 400;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #030a2b;
+	padding: 5px 32px;
+}
+.navbar-light .navbar-nav .active>.nav-lin {
+	color: #030a2b;
+}
+.navbar .nav-item .nav-link span.icon {
+	padding: 0 12px 0 0;
+}
+.nav-item.active .nav-link,
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #2d48c5;
+}
+.nav-item .nav-link {
+	color: #030a2b;
+}
+.nav-item .nav-link:hover {
+	color: #2d48c5;
+}
+.page-title {
+	font-size: 22px;
+}
+.page-title .page-sub-title {
+	font-size: 16px;
+	font-weight: 300;
+}
+.main {
+	padding-top: 25px;
+	color: #030a2b;
+}
+
+.main .card {
+	border: none;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 10px -7px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 10px -7px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px -7px rgba(0,0,0,0.8);
+}
+.main .card .card-header {
+	background-color: #fff;
+	border-bottom: 3px #f5f5f5 solid;
+	padding: 25px 1.25rem;
+	border-radius: 0px !important;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+.main .card-heading {
+	padding-bottom: 7px;
+	padding-left: 5px;
+}
+
+.main .card .card-step-indicator {
+	text-transform: uppercase;
+	font-family: 'proxima_nova_scosfthin', 'Proxima Nova', sans-serif;
+}
+
+.task {
+	border: 3px #f5f5f5 solid;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.task .task-inner {
+	padding: 10px;
+}
+.task .task-actions .fi svg {
+	width: 18px;
+	height: 18px;
+}
+.domain {
+	border: 3px #f5f5f5 solid;
+	border-radius: 5px;
+}
+.domain .domain-inner {
+	padding: 10px;
+}
+.domain {
+	display: none;
+}
+.domain .domain-title {
+	position: relative;
+}
+.domain .domain-title .badge-important {
+	position: absolute;
+    right: -24px;
+    top: 1px;
+    color: #f8614d;
+}
+.domain .domain-actions a {
+	padding-left: 6px;
+}
+.domain .domain-actions .fi svg {
+	width: 18px;
+	height: 18px;
+}
+.domain.active {
+	display: block;
+}
+.domain .banner {
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.domain .banner:nth-of-type(1) {
+	border-bottom-left-radius: 4px;
+	border-right: 1px #f4f4f4 solid;
+}
+.domain .banner:nth-of-type(2) {
+	border-bottom-right-radius: 4px;
+}
+.domain .banner.badge-success {
+	background-color: #6fc07a;
+}
+.domain .banner.badge-danger {
+	background-color: #c06f79;
+}
+.resource {
+	box-shadow: 0 3px 3px -3px #f2f2f2;
+	padding: 10px 0;
+}
+.resource:first-of-type {
+	padding: 0 0 10px 0;
+}
+.resource:last-of-type {
+	box-shadow: none;
+}
+
+.search .input-group .input-group-text {
+	border: 0;
+	border-radius: 0;
+	padding: .375rem 0.4rem;
+	color: inherit;
+	background: transparent;
+}
+.search .input-group .form-control {
+	border: 0;
+	border-radius: 0;
+	padding: 0.375rem 0;
+	color: #030a2b;
+	background-color: transparent;
+}
+.search .input-group .form-control:focus {
+	outline: 0;
+	box-shadow: inset 0 -1px 0 #ddd;
+}
+.search .search-result-heading {
+	padding: 0.4rem 1.25rem;
+	font-size: 13px;
+}
+.upload-process, .upload-map-fields, .submit-card {
+	display: none;
+}
+.upload-map-fields .csvValues .rowValue {
+	display: inline-block;
+	padding: 0 4px;
+}
+.upload-map-fields .csvValues .rowValue:first-of-type {
+	padding: 0 4px 0 0;
+}
+
+.card-body.status-bar div[class*='col-'] .item {
+    border-right: 1px solid #eee;
+    padding: 20px 0;
+}
+.card-body.status-bar div[class*='col-']:last-of-type .item {
+    border-right: none;
+}
+.card-body.status-bar .item .title {
+	font-size: 20px;
+	padding-right:10px;
+}
+.card-body.status-bar .item .value {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  margin: 5px 0 0 0;
+  border: 4px solid #2d48c5;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #2d48c5 transparent transparent transparent;
+}
+.uploading .lds-ring {
+	margin: 0 auto;
+	width: 55px;
+	height: 55px;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.55s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.4s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.25s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.login-form {
+	margin-top: 150px;
+	background-color: #fff;
+	position: relative;
+}
+.login-form .logo img {
+	width: 200px;
+}
+.login-form .inner {
+	padding: 20px;
+}
+body.login,
+html.login {
+	width: 100%;
+	height: 100%;
+}
+
+body.login {
+	background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.loan-overview .property, 
+.loan-overview .value {
+	display: block;
+}
+.loan-overview .property {
+	margin-bottom: 6px;
+	font-family: 'proxima_nova_scosfthin', 'Proxima Nova', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.loan-overview .value {
+	font-size: 17px;
+}

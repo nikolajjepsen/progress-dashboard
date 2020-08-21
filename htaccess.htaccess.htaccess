@@ -1,0 +1,46 @@
+RewriteEngine On 
+
+# Auth pages
+RewriteRule ^login/?$ login.php
+RewriteRule ^logout/?$ logout.php
+
+
+# Contacts
+
+# Import
+#RewriteRule ^contacts/import/?$ contacts/import/import.php
+RewriteRule ^contacts/import/([\d]+)/?$ contacts/import/import.php?fileId=$1 [QSA]
+RewriteRule ^contacts/files/?$ contacts/import/files.php
+
+# Export
+RewriteRule ^contacts/export/?$ contacts/export/export.php
+RewriteRule ^contacts/download/?$ contacts/export/download_zip.php
+
+# Search
+RewriteRule ^contacts/search/?$ contacts/search.php
+
+
+# Content
+
+#Partials
+RewriteRule ^content/partials/?$ content/partials/partials.php
+RewriteRule ^content/partials/single/([0-9]+)/?$ content/partials/single.php?partialId=$1 [QSA]
+
+# Templates
+RewriteRule ^content/templates/?$ content/templates/templates.php
+RewriteRule ^content/templates/single/([0-9]+)/?$ content/templates/single.php?templateId=$1 [QSA]
+
+# Landers
+RewriteRule ^content/boilerplates/?$ content/boilerplates/boilerplates.php
+RewriteRule ^content/boilerplates/single/([0-9]+)/?$ content/boilerplates/single.php?plateId=$1 [QSA]
+RewriteRule ^content/boilerplates/download/([0-9]+)/?$ content/boilerplates/download.php?plateId=$1 [QSA]
+
+
+# Tracking
+
+# Domains
+RewriteRule ^domains/overview/?$ domains/overview.php
+RewriteRule ^domains/delete/([0-9]+)/?$ domains/overview.php?deleteDomain=1&domainId=$1 [QSA]
+RewriteRule ^domains/single/([0-9]+)/?$ domains/single.php?domainId=$1 [QSA]
+RewriteRule ^domains/settings/?$ domains/settings.php
+

@@ -1,0 +1,9 @@
+#questions .question:not(:first-child) {
+	display: none;
+}
+#questions .question .description {
+	font-weight: 700;
+}
+#questions .question .answer {
+	margin: 0 auto;
+}

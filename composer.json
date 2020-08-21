@@ -1,0 +1,15 @@
+{
+    "require": {
+        "parsecsv/php-parsecsv": "^1.1",
+        "brick/phonenumber": "0.2.*",
+        "tracy/tracy": "^2.5",
+        "delight-im/file-upload": "^1.2",
+        "spatie/ssl-certificate": "^1.13",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+	    "psr-4": {
+	       "Progress\\" : "app/classes/"
+	     }
+	}
+}

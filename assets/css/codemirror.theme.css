@@ -1,0 +1,48 @@
+.cm-s-pm  { font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;}
+.cm-s-pm.CodeMirror { background: #fff; color: #47525f; } 
+
+.cm-s-pm span.cm-meta { color: #BBB529; }
+.cm-s-pm span.cm-number { color: #6897BB; }
+.cm-s-pm span.cm-keyword { color: #CC7832; line-height: 1em; font-weight: bold; }  
+.cm-s-pm span.cm-def { color: #47525f; font-style: italic; }
+.cm-s-pm span.cm-variable { color: #47525f; }
+.cm-s-pm span.cm-variable-2 { color: #47525f; }
+.cm-s-pm span.cm-variable-3 { color: #9876AA; }
+.cm-s-pm span.cm-type { color: #AABBCC; font-weight: bold; }
+.cm-s-pm span.cm-property { color: #eead47; }
+.cm-s-pm span.cm-operator { color: #47525f; }
+.cm-s-pm span.cm-string { color: #2d48c5; }
+.cm-s-pm span.cm-string-2 { color: #2d48c5; }
+.cm-s-pm span.cm-comment { color: #5171a1; font-style: italic; } 
+.cm-s-pm span.cm-link { color: #CC7832; }
+.cm-s-pm span.cm-atom { color: #CC7832; }
+.cm-s-pm span.cm-error { color: #BC3F3C; }
+.cm-s-pm span.cm-tag { color: #FF9E59; font-weight: bold; }
+.cm-s-pm span.cm-attribute { color: #6897bb; }
+.cm-s-pm span.cm-qualifier { color: #2d48c5; }
+.cm-s-pm span.cm-bracket { color: #47525f; }
+.cm-s-pm span.cm-builtin { color: #FF9E59; }
+.cm-s-pm span.cm-special { color: #FF9E59; }
+.cm-s-pm span.cm-pm-variable { color:#2d48c5; font-weight: bold; }
+
+.cm-s-pm .CodeMirror-cursor { border-left: 1px solid #47525f; }  
+.cm-s-pm .CodeMirror-activeline-background { background: #323232; } 
+.cm-s-pm .CodeMirror-gutters { background: #f4f5fd; border-right: 1px solid #2d48c5; } 
+.cm-s-pm .CodeMirror-guttermarker { color: #FFEE80; }  
+.cm-s-pm .CodeMirror-guttermarker-subtle { color: #D0D0D0; }  
+.cm-s-pm .CodeMirrir-linenumber { color: #606366; } 
+.cm-s-pm .CodeMirror-matchingbracket { background-color: #2d48c5; color: #091240 !important; font-weight: bold; } 
+.cm-s-pm .CodeMirror-matchingtag { background-color: #dbddea;  font-weight: bold; } 
+
+.cm-s-pm div.CodeMirror-selected { background: #214283; }  
+
+.CodeMirror-hints.pm {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #9C9E9E;
+  background-color: #3B3E3F !important;
+}
+
+.CodeMirror-hints.pm .CodeMirror-hint-active {
+  background-color: #494D4E !important;
+  color: #9C9E9E !important;
+}

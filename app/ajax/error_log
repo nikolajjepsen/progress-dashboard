@@ -1,0 +1,19 @@
+[11-Dec-2019 07:05:49 America/New_York] PHP Notice:  Undefined index: task in /home/leapqlwv/progressmedia.dev/manage/app/ajax/loan-single.php on line 4
+[11-Dec-2019 07:06:06 America/New_York] PHP Notice:  Undefined index: task in /home/leapqlwv/progressmedia.dev/manage/app/ajax/loan-single.php on line 4
+[11-Dec-2019 07:09:12 America/New_York] PHP Fatal error:  Uncaught LogicException: Logging directory is not specified. in /home/leapqlwv/progressmedia.dev/manage/vendor/tracy/tracy/src/Tracy/Logger/Logger.php:58
+Stack trace:
+#0 /home/leapqlwv/progressmedia.dev/manage/vendor/tracy/tracy/src/Tracy/Debugger/Debugger.php(574): Tracy\Logger->log('Passing in the ...', 'info')
+#1 /home/leapqlwv/progressmedia.dev/manage/app/classes/Api/LeapFrontend/Config.php(42): Tracy\Debugger::log('Passing in the ...')
+#2 /home/leapqlwv/progressmedia.dev/manage/app/ajax/loan-single.php(5): Progress\Api\LeapFrontend\Config->updateEntry('1', 'contact:email', 'info@{{site:url...')
+#3 {main}
+  thrown in /home/leapqlwv/progressmedia.dev/manage/vendor/tracy/tracy/src/Tracy/Logger/Logger.php on line 58
+[11-Dec-2019 07:11:09 America/New_York] PHP Recoverable fatal error:  Object of class GuzzleHttp\Psr7\Response could not be converted to string in /home/leapqlwv/progressmedia.dev/manage/app/classes/Api/LeapFrontend/Config.php on line 51
+[11-Dec-2019 07:14:33 America/New_York] PHP Recoverable fatal error:  Object of class GuzzleHttp\Psr7\Response could not be converted to string in /home/leapqlwv/progressmedia.dev/manage/app/classes/Api/LeapFrontend/Config.php on line 50
+[11-Dec-2019 07:16:04 America/New_York] PHP Recoverable fatal error:  Object of class GuzzleHttp\Psr7\Response could not be converted to string in /home/leapqlwv/progressmedia.dev/manage/app/classes/Api/LeapFrontend/Config.php on line 55
+[11-Dec-2019 07:16:50 America/New_York] PHP Fatal error:  Uncaught LogicException: Logging directory is not specified. in /home/leapqlwv/progressmedia.dev/manage/vendor/tracy/tracy/src/Tracy/Logger/Logger.php:58
+Stack trace:
+#0 /home/leapqlwv/progressmedia.dev/manage/vendor/tracy/tracy/src/Tracy/Debugger/Debugger.php(574): Tracy\Logger->log('Unable to decod...', 'info')
+#1 /home/leapqlwv/progressmedia.dev/manage/app/classes/Api/LeapFrontend/Config.php(55): Tracy\Debugger::log('Unable to decod...')
+#2 /home/leapqlwv/progressmedia.dev/manage/app/ajax/loan-single.php(5): Progress\Api\LeapFrontend\Config->updateEntry('5', 'site:url', 'leapkreditt.com')
+#3 {main}
+  thrown in /home/leapqlwv/progressmedia.dev/manage/vendor/tracy/tracy/src/Tracy/Logger/Logger.php on line 58

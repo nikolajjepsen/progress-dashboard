@@ -1,0 +1,25 @@
+.export-step-2, .export-step-3 {
+	display: none;
+}
+
+
+.selected-data {
+	background-color: #fafafa;
+	cursor: pointer;
+}
+.selected-data .selected-source {
+	font-weight: bold;
+}
+.ui-sortable {
+	list-style: none;
+	padding: 0;
+	height: 100%;
+}
+.ui-sortable li {
+	padding: 10px;
+	margin: 4px 0;
+	cursor: pointer;
+}
+.ui-sortable .ui-sortable-placeholder {
+	background-color: #ccc;
+}
